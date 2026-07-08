@@ -1,5 +1,5 @@
 {
-  "name": "pi-collapse-tools",
+  "name": "@q-peppa/pi-collapse-tools",
   "version": "0.1.0",
   "description": "Pi plugin that collapses built-in tool calls (bash, read, edit, write, grep, find, ls) into a single compact row with an expand badge.",
   "type": "module",

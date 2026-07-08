@@ -1,11 +1,13 @@
-# pi-collapse-tools
+# @q-peppa/pi-collapse-tools
 
 > A [Pi](https://github.com/earendil-works/pi-coding-agent) plugin that collapses built-in tool calls into a single compact row with an expand badge.
 
-[![npm version](https://img.shields.io/npm/v/pi-collapse-tools.svg)](https://www.npmjs.com/package/pi-collapse-tools)
+The npm package name is **`@q-peppa/pi-collapse-tools`** (scoped). The repo / directory is still `pi-collapse-tools`.
+
+[![npm version](https://img.shields.io/npm/v/@q-peppa/pi-collapse-tools.svg)](https://www.npmjs.com/package/@q-peppa/pi-collapse-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-`pi-collapse-tools` overrides the default renderers for the seven built-in Pi
+`@q-peppa/pi-collapse-tools` overrides the default renderers for the seven built-in Pi
 tools — `bash`, `read`, `edit`, `write`, `grep`, `find`, and `ls` — so each
 tool call occupies a **single line** while collapsed. A status indicator
 (`ok`, `+N -N`, `N matches`, `N files`, …) is shown inline, and a `[> Ctrl+O]`
@@ -35,7 +37,7 @@ Compact by default, expandable when you need the detail.
 ## Installation
 
 ```bash
-npm install pi-collapse-tools
+npm install @q-peppa/pi-collapse-tools
 ```
 
 Pi auto-discovers plugins installed under `node_modules`, so adding the
@@ -44,7 +46,7 @@ explicitly in your Pi config:
 
 ```jsonc
 {
-  "plugins": ["pi-collapse-tools"]
+  "plugins": ["@q-peppa/pi-collapse-tools"]
 }
 ```
 
@@ -52,7 +54,7 @@ explicitly in your Pi config:
 
 ```ts
 // entry point (e.g. pi.config.ts or your custom agent build)
-import collapseTools from "pi-collapse-tools";
+import collapseTools from "@q-peppa/pi-collapse-tools";
 
 export default function (pi: ExtensionAPI) {
   collapseTools(pi);

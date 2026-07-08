@@ -1,0 +1,60 @@
+{
+  "name": "pi-collapse-tools",
+  "version": "0.1.0",
+  "description": "Pi plugin that collapses built-in tool calls (bash, read, edit, write, grep, find, ls) into a single compact row with an expand badge.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pi",
+    "pi-plugin",
+    "pi-coding-agent",
+    "earendil",
+    "earendil-works",
+    "collapse",
+    "compact",
+    "tool",
+    "tool-call",
+    "tool-renderer",
+    "tui",
+    "cli",
+    "terminal",
+    "developer-tools",
+    "ux"
+  ],
+  "author": "Q-Peppa",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Q-Peppa/pi-collapse-tools.git"
+  },
+  "homepage": "https://github.com/Q-Peppa/pi-collapse-tools#readme",
+  "bugs": {
+    "url": "https://github.com/Q-Peppa/pi-collapse-tools/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "^0.80.0",
+    "@earendil-works/pi-tui": "^0.80.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
